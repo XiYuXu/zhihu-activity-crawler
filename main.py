@@ -26,7 +26,7 @@ async def run():
             context = await browser.new_context(storage_state=AUTH_FILE)
             page = await context.new_page()
             
-            # 跳转到关注页/动态页
+            # 跳转到关注页/动态页 这里我用我自己的账号来测试，你可以换成自己的
             await page.goto("https://www.zhihu.com/people/ooo_ooo_ooo")
             await page.wait_for_load_state("networkidle")
 
